@@ -4,7 +4,7 @@ This project is an example of I prepared to improve my React and Tailwind CSS sk
 
 ## Example Picture
 
-![image](https://github.com/furkan-can/Getir.com-Design/assets/79963893/f19e11d1-3b3a-476d-8b46-b6fa16b0d1e5)
+![image](https://github.com/furkan-can/Getir.com-FrontEnd/assets/79963893/1b922668-3b9e-4e21-bb4c-6d9e8a6d088d)
 
 ## Technologies and Concepts
 
@@ -15,8 +15,12 @@ This project is an example of I prepared to improve my React and Tailwind CSS sk
 
 ## Installation and Operation
 
-- git clone https://github.com/furkan-can/Getir.com-Design.git
-- cd Getir.com-Design
+- git clone https://github.com/furkan-can/Getir.com-FrontEnd.git
+- cd Getir.com-FrontEnd
 - npm install
 - npm run dev
+
+## Demo
+
+
 
