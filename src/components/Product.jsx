@@ -8,7 +8,7 @@ const Product = ({ product }) => {
                 <AiOutlinePlus size={16} />
             </button>
             <img src={`/${product.image}`} alt={product.title} />
-            <div className=' text-brand-color'>{product.price}</div>
+            <div className=' text-brand-color'>₺{product.price}</div>
             <div className=' text-gray-900'>{product.title}</div>
             <div className=' text-gray-500'>{product.alt}</div>
         </div>

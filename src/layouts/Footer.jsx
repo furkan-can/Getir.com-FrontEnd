@@ -141,7 +141,7 @@ const Footer = () => {
                             <BsInstagram size={20} className="text-gray-500 group-hover:text-primary-brand-color" />
                         </a>
 
-                        <a className=" hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color transition-all flex items-center text-gray-500 text-xs gap-x-2 border border-gray-100 rounded-lg p-2" href="#">
+                        <a className=" hover:bg-primary-brand-color hover:bg-opacity-10 group hover:text-primary-brand-color transition-all flex items-center text-gray-500 text-xs gap-x-2 border border-gray-100 rounded-lg p-2" href="#">
                             <BiGlobe size={20} className="text-gray-500 group-hover:text-primary-brand-color" /> Türkçe (TR)
                         </a>
                     </nav>
