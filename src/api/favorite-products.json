@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "Lay's Mevsim Yeşillikli",
+      "image": "favorite-products/lays.jpeg",
+      "alt": "96 g",
+      "price": 6.36
+    },
+    {
+      "id": 2,
+      "title": "Eti Canga",
+      "image": "favorite-products/canga.jpeg",
+      "alt": "45 g",
+      "price": 2.85
+    },
+    {
+      "id": 3,
+      "title": "Kuzeyden",
+      "image": "favorite-products/kuzeyden-su.jpeg",
+      "alt": "1.5 L",
+      "price": 2.95
+    },
+    {
+      "id": 4,
+      "title": "Kızılay Erzincan",
+      "image": "favorite-products/kizilay-soda.jpeg",
+      "alt": "6 x 200 ml",
+      "price": 5.90
+    },
+    {
+      "id": 5,
+      "title": "Ülker Napoliten",
+      "image": "favorite-products/napoliten.jpeg",
+      "alt": "33 g",
+      "price": 3.30
+    },
+    {
+      "id": 6,
+      "title": "Kavrulmuş Siyah Ay Çekirdeği",
+      "image": "favorite-products/aycekirdek.jpeg",
+      "alt": "180 g",
+      "price": 10.95
+    },
+    {
+      "id": 7,
+      "title": "Magnum Badem",
+      "image": "favorite-products/magnum.jpeg",
+      "alt": "100 ml",
+      "price": 7.50
+    },
+    {
+      "id": 8,
+      "title": "İçim %3 Yağlı Süt",
+      "image": "favorite-products/sut.jpeg",
+      "alt": "1 L",
+      "price": 7.95
+    }
+  ]

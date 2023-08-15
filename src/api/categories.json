@@ -1,0 +1,97 @@
+[
+    {
+      "id": 1,
+      "title": "Yeni Ürünler",
+      "image": "categories-images/yeni.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "İndirimler",
+      "image": "categories-images/indirim.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Su & İçecek",
+      "image": "categories-images/icecek.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Meyve & Sebze",
+      "image": "categories-images/meyve-sebze.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Fırından",
+      "image": "categories-images/firindan.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Temel Gıda",
+      "image": "categories-images/temel-gida.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Atıştırmalık",
+      "image": "categories-images/atistirmalik.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Dondurma",
+      "image": "categories-images/dondurma.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "Yiyecek",
+      "image": "categories-images/yiyecek.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Süt & Kahvaltı",
+      "image": "categories-images/sut-kahvaltilik.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Fit & Form",
+      "image": "categories-images/fit-form.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "Kişisel Bakım",
+      "image": "categories-images/kisisel-bakim.jpeg"
+    },
+    {
+      "id": 13,
+      "title": "Ev Bakım",
+      "image": "categories-images/ev-bakim.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "Ev & Yaşam",
+      "image": "categories-images/ev-yasam.jpeg"
+    },
+    {
+      "id": 15,
+      "title": "Teknoloji",
+      "image": "categories-images/teknoloji.jpeg"
+    },
+    {
+      "id": 16,
+      "title": "Evcil Hayvan",
+      "image": "categories-images/evcil-hayvan.jpeg"
+    },
+    {
+      "id": 17,
+      "title": "Bebek",
+      "image": "categories-images/bebek.jpeg"
+    },
+    {
+      "id": 18,
+      "title": "Cinsel Sağlık",
+      "image": "categories-images/cinsel-saglik.jpeg"
+    },
+    {
+      "id": 19,
+      "title": "Giyim",
+      "image": "categories-images/giyim.jpeg"
+    }
+  ]

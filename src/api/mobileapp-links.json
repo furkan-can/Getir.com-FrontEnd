@@ -1,0 +1,14 @@
+[
+    {
+        "title" : "App Store Link",
+        "url": "mobileapp-images/appstore-link.svg"
+    },
+    {
+        "title" : "Google Play Link",
+        "url": "mobileapp-images/googleplay-link.svg"
+    },
+    {
+        "title" : "App Gallery Link",
+        "url": "mobileapp-images/appgallery-link.svg"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "path" : "/",
+        "title" : "getir-logo",
+        "url": "logos/getir-logo.svg"
+    },
+    {
+        "path" : "/yemek",
+        "title" : "getiryemek-logo",
+        "url": "logos/getiryemek-logo.svg"
+    },
+    {
+        "path" : "/buyuk",
+        "title" : "getirbüyük-logo",
+        "url": "logos/getirbuyuk-logo.svg"
+    },
+    {
+        "path" : "/su",
+        "title" : "getirsu-logo",
+        "url": "logos/getirsu-logo.svg"
+    },
+    {
+        "path" : "/carsi",
+        "title" : "getirçarşı-logo",
+        "url": "logos/getircarsi-logo.svg"
+    }
+]

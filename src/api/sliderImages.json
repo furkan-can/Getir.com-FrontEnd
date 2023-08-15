@@ -1,0 +1,18 @@
+[
+    {
+        "title" : "Hero-Img1",
+        "url": "slider-images/slider-img1.jpg"
+    },
+    {
+        "title" : "Hero-Img2",
+        "url": "slider-images/slider-img2.jpg"
+    },
+    {
+        "title" : "Hero-Img3",
+        "url": "slider-images/slider-img3.jpg"
+    },
+    {
+        "title" : "Hero-Img4",
+        "url": "slider-images/slider-img4.jpg"
+    }
+]

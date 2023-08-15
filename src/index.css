@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: "Open Sans", sans-serif;
+    @apply antialiased bg-gray-50;
+  }
+}
+
+.error {
+  @apply !border-red-600 hover:border-red-600;
+}
+
+.flag-select {
+  @apply !pb-0;
+}
+
+.flag-select button {
+  @apply h-14 border-2 border-gray-200 hover:border-primary-brand-color transition-colors bg-white rounded;
+}
+
+.flag-select button > span span:nth-child(2) {
+  @apply text-sm pl-2;
+}
+
+.phone-text::-webkit-outer-spin-button,
+.phone-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.phone-text[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.active {
+  @apply brightness-0 invert-[90%];
+}
