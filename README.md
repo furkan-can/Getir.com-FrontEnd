@@ -22,5 +22,6 @@ This project is an example of I prepared to improve my React and Tailwind CSS sk
 
 ## Demo
 
+https://getir-clone-pi.vercel.app/
 
 
