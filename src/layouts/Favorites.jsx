@@ -13,7 +13,7 @@ const Favorites = () => {
     return (
         <div className="container mx-auto max-w-7xl">
             <Title title="Favoriler" />
-            <div className="grid grid-cols-8 gap-0.1 rounded-lg overflow-hidden">
+            <div className="grid grid-cols-3 2xl:grid-cols-9 xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 gap-0.1 rounded-lg overflow-hidden">
                 {!favoriteProducts.length && <div>Yükleniyor...</div>}
                 {
                     favoriteProducts.length && favoriteProducts.map((product, index) => (

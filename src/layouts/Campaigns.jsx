@@ -50,23 +50,53 @@ const Campaigns = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false
+
+                }
+            },
+
+        ]
     };
 
+
+
     return (
-        <div className="container mx-auto max-w-7xl py-8">
-            <Title title="Kampanyalar" />
-            <Slider className="-mx-2 flex" ref={slider => (sliderRef = slider)} {...settings} >
+        <div className="container mx-auto max-w-7xl md:py-8 overflow-hidden ">
+            <div className="hidden md:block">
+                <Title title="Kampanyalar" />
+            </div>
+            <Slider className="md:-mx-2 flex" ref={slider => (sliderRef = slider)} {...settings} >
                 {!campaings.length && <div>Yükleniyor...</div>}
                 {
                     campaings.length && campaings.map((item, index) => {
                         return (
-                            <img key={index} className="object-cover px-2 rounded-2xl" src={`/${item.image}`} alt={`Kampanya ${index}`} />
+                            <img key={index} className="object-cover md:px-2 md:rounded-2xl" src={`/${item.image}`} alt={`Kampanya ${index}`} />
                         )
                     })
                 }

@@ -90,11 +90,10 @@ const Footer = () => {
     ];
 
     return (
-        <div className="bg-white mt-14">
+        <div className="bg-white md:mt-14 p-5 md:p-0">
             <div className="container mx-auto max-w-7xl ">
-                <div className="grid grid-cols-4 pt-10 pb-5">
+                <div className="grid md:grid-cols-4 pt-5 md:pt-10 pb-5">
                     <section>
-
                         <nav className="grid grid-rows-3 gap-y-4">
                             <h6 className="text-lg text-primary-brand-color">Getir{`'`}i indirin!</h6>
                             {
@@ -103,9 +102,7 @@ const Footer = () => {
                             {
 
                                 mobileAppLinks.length && mobileAppLinks.map((link, index) => (
-                                    <a key={index} href="#">
-                                        <img src={`/${link.url}`} alt={link.title} />
-                                    </a>
+                                    <img key={index} className="cursor-pointer" src={`/${link.url}`} alt={link.title} />
                                 ))
                             }
                         </nav>
@@ -117,10 +114,10 @@ const Footer = () => {
 
                     }
                 </div>
-                <div className="border-t border-gray-100 py-6 flex justify-between items-center">
-                    <div className="text-xs text-gray-700 flex gap-x-8">
-                        &copy; 2023 Getir
-                        <ul className="list-disc">
+                <div className=" bg-gray-50 gap-y-2 md:gap-y-0 md:bg-white border-t text-center md:text-left border-gray-100 py-6 flex md:flex-row flex-col justify-between items-center">
+                    <div className="text-xs gap-y-2 md:gap-y-0 text-gray-700 flex md:flex-row flex-col gap-x-8">
+                        <span>&copy; 2023 Getir</span>
+                        <ul className="md:list-disc">
                             <li>
                                 <a className="text-primary-brand-color hover:underline" href="#">
                                     Bilgi Toplumu Hizmetleri
@@ -140,11 +137,13 @@ const Footer = () => {
                         <a className="hover:bg-primary-brand-color hover:bg-opacity-10 group p-2 rounded-lg hover:text-primary-brand-color transition-all" href="#">
                             <BsInstagram size={20} className="text-gray-500 group-hover:text-primary-brand-color" />
                         </a>
-
-                        <a className=" hover:bg-primary-brand-color hover:bg-opacity-10 group hover:text-primary-brand-color transition-all flex items-center text-gray-500 text-xs gap-x-2 border border-gray-100 rounded-lg p-2" href="#">
-                            <BiGlobe size={20} className="text-gray-500 group-hover:text-primary-brand-color" /> Türkçe (TR)
+                        <a className="hidden hover:bg-primary-brand-color hover:bg-opacity-10 group hover:text-primary-brand-color transition-all md:flex items-center text-gray-500 text-xs gap-x-2 border border-gray-100 rounded-lg p-2" href="#">
+                            <BiGlobe size={20} className="text-gray-500 group-hover:text-primary-brand-color" /> <span className="md:hidden lg:flex">Türkçe (TR)</span>
                         </a>
                     </nav>
+                    <a className="hover:bg-primary-brand-color hover:bg-opacity-10 group hover:text-primary-brand-color transition-all md:hidden flex items-center text-gray-500 text-xs gap-x-2 border border-gray-100 rounded-lg p-2 bg-white" href="#">
+                        <BiGlobe size={20} className="text-gray-500 group-hover:text-primary-brand-color" /> Türkçe (TR)
+                    </a>
                 </div>
             </div>
         </div>

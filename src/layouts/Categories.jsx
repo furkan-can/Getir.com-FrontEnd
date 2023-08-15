@@ -15,7 +15,7 @@ const Categories = () => {
         <div className="bg-white py-10 shadow-sm">
             <div className="container mx-auto max-w-7xl">
                 <Title title="Kategoriler" />
-                <div className="grid grid-cols-10">
+                <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12">
                     {!categories.length && <div>Yükleniyor...</div>}
                     {
                         categories && categories.map(

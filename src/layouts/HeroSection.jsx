@@ -6,6 +6,7 @@ import GetirBiMutlulukImage from "@/assets/getirbimutluluk-img.svg"
 import ReactFlagsSelect from "react-flags-select";
 import { PiWarningCircle } from "react-icons/pi";
 import { useEffect, useRef, useState } from "react";
+import { useWindowWidth } from "@react-hook/window-size";
 
 const HeroSection = () => {
     const [selected, setSelected] = useState("TR");
@@ -41,10 +42,13 @@ const HeroSection = () => {
 
 
     let sliderRef = useRef(null);
+    const windowWidth = useWindowWidth();
+
 
     useEffect(() => {
-        sliderRef.slickPlay();
-    }, [sliderRef]);
+        if (windowWidth >= 768)
+            sliderRef.slickPlay();
+    }, [sliderRef, windowWidth]);
 
     const settings = {
         infinite: true,
@@ -56,26 +60,31 @@ const HeroSection = () => {
         arrows: false,
     };
 
-    return (
-        <div className="h-[500px] relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:h-full before:z-10">
-            <Slider ref={slider => (sliderRef = slider)} {...settings}>
-                {
-                    SliderImages.map((item, index) => {
-                        return (
-                            <img key={index} className="w-full h-[500px] object-cover" src={`/${item.url}`} alt={item.title} />
-                        )
-                    })
-                }
 
-            </Slider>
-            <div className="max-w-7xl flex justify-between items-center container absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
-                <div>
+
+
+    return (
+        <div className="h-auto md:h-[500px] relative before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:h-full before:z-10">
+            {
+                windowWidth >= 768 && <Slider ref={slider => (sliderRef = slider)} {...settings}>
+                    {
+                        SliderImages.map((item, index) => {
+                            return (
+                                <img key={index} className="w-full h-[500px] object-cover" src={`/${item.url}`} alt={item.title} />
+                            )
+                        })
+                    }
+
+                </Slider>
+            }
+            <div className="md:max-w-7xl flex justify-between items-center md:container relative md:absolute left-0 top-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+                <div className="hidden md:block">
                     <img src={GetirBiMutlulukImage} alt="Getir Bi Mutluluk" />
                     <h3 className="mt-8 text-4xl font-semibold text-white">
                         Dakikalar içinde <br /> kapınızda
                     </h3>
                 </div>
-                <div className="gap-y-3 flex flex-col p-6 w-[400px] rounded-lg bg-gray-50 ">
+                <div className="gap-y-3 flex flex-col p-6 w-full md:w-[400px] md:rounded-lg bg-gray-50 ">
                     <h4 className="text-primary-brand-color text-center font-semibold " >Giriş yap veya kayıt ol</h4>
                     <div className="flex gap-x-2">
                         <ReactFlagsSelect
